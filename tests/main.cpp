@@ -4,12 +4,12 @@
 
 static void error_callback(int error, const char* description)
 {
-  FAIL() << "GLFW Failed: " << description;
+  FAIL() << "GLFW Failed (" << error << "): " << description;
 }
 
 TEST(GLFWTests, BuildInvisibleWindow)
 {
-  GLFWWindow* window;
+  GLFWwindow* window;
   glfwSetErrorCallback(error_callback);
 
   if (!glfwInit())

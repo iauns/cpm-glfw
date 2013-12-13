@@ -36,9 +36,9 @@ CPM_InitModule(${CPM_MODULE_NAME})
 #------------------------------------------------------------------------------
 # GLFW
 #------------------------------------------------------------------------------
-set(GLFW_DIR ${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/gtest)
+set(GLFW_DIR ${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/glfw)
 CPM_EnsureRepoIsCurrent(
-  TARGET_DIR ${GOOGLE_TEST_DIR}
+  TARGET_DIR ${GLFW_DIR}
   GIT_REPOSITORY "https://github.com/glfw/glfw.git"
   GIT_TAG "3.0.3"
   )
@@ -46,5 +46,5 @@ CPM_EnsureRepoIsCurrent(
 add_subdirectory(${GLFW_DIR})
 
 CPM_ExportAdditionalIncludeDir("${GLFW_DIR}/include")
-CPM_ExportAdditionalLibraryTarget(${GLFW_LIBRARIES})
+CPM_ExportAdditionalLibraryTarget(glfw ${GLFW_LIBRARIES})
 
