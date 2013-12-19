@@ -36,6 +36,10 @@ CPM_InitModule(${CPM_MODULE_NAME})
 #------------------------------------------------------------------------------
 # GLFW
 #------------------------------------------------------------------------------
+set(GLFW_BUILD_EXAMPLES OFF)
+set(GLFW_BUILD_TESTS OFF)
+set(GLFW_INSTALL OFF)
+
 set(GLFW_DIR ${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/glfw)
 CPM_EnsureRepoIsCurrent(
   TARGET_DIR ${GLFW_DIR}

@@ -9,7 +9,7 @@ static void error_callback(int error, const char* description)
 
 TEST(GLFWTests, BuildInvisibleWindow)
 {
-  GLFWwindow* window;
+  //GLFWwindow* window;
   glfwSetErrorCallback(error_callback);
 
   //if (!glfwInit())
