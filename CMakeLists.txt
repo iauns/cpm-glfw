@@ -45,6 +45,7 @@ CPM_EnsureRepoIsCurrent(
   TARGET_DIR ${GLFW_DIR}
   GIT_REPOSITORY "https://github.com/glfw/glfw.git"
   GIT_TAG "3.0.3"
+  USE_CACHING TRUE
   )
 
 add_subdirectory(${GLFW_DIR})
