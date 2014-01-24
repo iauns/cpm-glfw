@@ -44,7 +44,7 @@ set(GLFW_DIR ${CMAKE_CURRENT_SOURCE_DIR}/3rdParty/glfw)
 CPM_EnsureRepoIsCurrent(
   TARGET_DIR ${GLFW_DIR}
   GIT_REPOSITORY "https://github.com/glfw/glfw.git"
-  GIT_TAG "3.0.3"
+  GIT_TAG "3.0.4"
   USE_CACHING TRUE
   )
 
